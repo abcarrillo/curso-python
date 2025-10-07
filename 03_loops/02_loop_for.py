@@ -65,12 +65,21 @@ print(pares)
 # Ejercicio 1: Imprimir números pares
 # Imprime todos los números pares del 2 al 20 (inclusive) usando un bucle for.
 print("\nEjercicio 1:")
+for numero in range(2, 21, 2):  # range(inicio, fin, paso)
+  print(numero)
 
 # Ejercicio 2: Calcular la media de una lista
 # Dada la siguiente lista de números:
 # numeros = [10, 20, 30, 40, 50]
 # Calcula la media de los números usando un bucle for.
 print("\nEjercicio 2:")
+numeros = [10, 20, 30, 40, 50]
+total = 0
+
+for number in numeros:
+  total += number
+
+print("Media: ", (total/len(numeros)))
 
 # Ejercicio 3: Buscar el máximo de una lista
 # Dada la siguiente lista de números:
