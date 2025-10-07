@@ -140,13 +140,61 @@ print(mensaje)
 # Pide al usuario que introduzca dos números y muestra un mensaje
 # indicando cuál es mayor o si son iguales
 
+#print("------------------------", "\n")
+#print(" Ejercicio 1 ", "\n")
+
+#numero_1 = input("Introduce número 1: ")
+#numero_2 = input("Introduce número 2: ")
+
+#if numero_1 > numero_2:
+#  print(f"El numero {numero_1} es mayor que {numero_2}")
+#elif numero_2 > numero_1:
+#  print(f"El numero {numero_2} es mayor que {numero_1}")
+#else:
+#  print("Los numeros son iguales")
+
+
+
 # Ejercicio 2: Calculadora simple
 # Pide al usuario dos números y una operación (+, -, *, /)
 # Realiza la operación y muestra el resultado (maneja la división entre zero)
+'''
+print("------------------------", "\n")
+print(" Ejercicio 2 ", "\n")
+
+operador_1 = float(input("Introduce operador 1: "))
+operador_2 = float(input("Introduce operador 2: "))
+signo = input("Introduce el signo de la operación (+, -, *, /): ")
+
+if signo == "+":
+  print(f"SUMA - Resultado: {operador_1 + operador_2}")
+elif signo == "-":
+  print(f"RESTA - Resultado: {operador_1 - operador_2}")
+elif signo == "*":
+  print(f"MULT - Resultado: {operador_1 * operador_2}")
+elif signo == "/":
+  print(f"DIV - Resultado: {operador_1 / operador_2}")
+else:
+  print("No reconozco ese signo")
+'''
 
 # Ejercicio 3: Año bisiesto
 # Pide al usuario que introduzca un año y determina si es bisiesto.
 # Un año es bisiesto si es divisible por 4, excepto si es divisible por 100 pero no por 400.
+
+'''
+print("------------------------", "\n")
+print(" Ejercicio 3 ", "\n")
+
+year_input = input("Introduzca un año para comprobar si es bisiesto: ")
+
+if (year_input % 4 == 0 and year_input % 100 != 0) or year_input % 400 == 0:
+    print(f"{year_input} es un año bisiesto.")
+else:
+    print(f"{year_input} no es un año bisiesto.")
+'''
+
+
 
 # Ejercicio 4: Categorizar edades
 # Pide al usuario que introduzca una edad y la clasifique en:
@@ -155,3 +203,20 @@ print(mensaje)
 # - Adolescente (13-17 años)
 # - Adulto (18-64 años)
 # - Adulto mayor (65 años o más)
+print("------------------------", "\n")
+print(" Ejercicio 4 ", "\n")
+
+age_input = int(input("Introduzca su edad:"))
+
+if(age_input >= 0 and age_input <= 2):
+  print("Bebé (0-2 años)")
+elif(age_input >= 3 and age_input <= 12):
+  print("Niño (3-12 años)")
+elif(age_input >= 13 and age_input <= 17):
+  print("Adolescente (13-17 años)")
+elif(age_input >= 18 and age_input <= 64):
+  print("Adulto (18-64 años)")
+elif(age_input >= 65):
+  print("Adulto mayor (65 años o más)")
+else:
+  print("Edad no válida")

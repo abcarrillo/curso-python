@@ -10,6 +10,8 @@ print("\nEjercicio 1: Imprimir mensajes")
 print("Escribe un programa que imprima tu nombre y tu ciudad en líneas separadas.")
 
 ### Completa aquí
+print("Alberto Barroso", end="\n")
+print("Santa Cruz de Tenerife")
 
 print("--------------")
 
@@ -22,6 +24,11 @@ d = True
 e = None
 
 ### Completa aquí
+print("a: " + (str(type(a))))
+print("b: " + (str(type(b))))
+print("c: " + (str(type(c))))
+print("d: " + (str(type(d))))
+print("e: " + (str(type(e))))
 
 print("--------------")
 
@@ -30,6 +37,13 @@ print("Convierte la cadena \"12345\" a un entero y luego a un float.")
 print("Convierte el float 3.99 a un entero. ¿Qué ocurre?")
 
 ### Completa aquí
+entero = int(12345)
+flotador = float(entero)
+reconversion = int(3.99)
+
+print("entero: " + str(entero))
+print("flotador: " + str(flotador))
+print("reconversion: " + str(reconversion))
 
 print("--------------")
 
@@ -40,6 +54,11 @@ print("Usa f-strings para imprimir una presentación.")
 # "Hola! Me llamo midudev y tengo 39 años, mido 1.70 metros"
 
 ### Completa aquí
+nombre = "Alberto"
+edad = 25
+altura = 1.85
+
+print(f"Hola me llamo {nombre}, tengo {edad} años, mido {altura} metros")
 
 print("--------------")
 
