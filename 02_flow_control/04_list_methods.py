@@ -81,6 +81,15 @@ print('🐹' in animals) # -> False
 # Inserta el número 10 en la posición 2 usando insert().
 # Modifica el primer elemento de la lista para que sea 0.
 
+print("---------------", "\n")
+print("Ejercicio 1", "\n")
+
+number_list = [1, 2, 3, 4, 5]
+number_list.append(6)
+number_list.insert(2, 10)
+number_list[0] = 0
+print(number_list)
+
 # Ejercicio 2: Combinar y limpiar listas
 # Crea dos listas:
 # lista_a = [1, 2, 3]
@@ -90,16 +99,50 @@ print('🐹' in animals) # -> False
 # Elimina el elemento en el índice 3 de lista_a usando pop(). Imprime el elemento eliminado.
 # Limpia completamente lista_b usando clear().
 
+print("---------------", "\n")
+print("Ejercicio 2", "\n")
+
+lista_a = [1, 2, 3]
+lista_b = [4, 5, 6, 1, 2]
+
+lista_a.extend(lista_b)
+lista_a.remove(1)
+ex_number = lista_a.pop(3)
+lista_b.clear()
+
+print("lista_a:", lista_a)
+print("lista_b:", lista_b)
+print("Numero sacado de lista_a", ex_number)
+
 # Ejercicio 3: Slicing y eliminación con del
 # Crea una lista con los números del 1 al 10.
 # Utiliza slicing y del para eliminar los elementos desde el índice 2 hasta el 5 (sin incluir el 5).
 # Imprime la lista resultante.
+
+print("---------------", "\n")
+print("Ejercicio 3", "\n")
+
+listado = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+del listado[2:5]
+print(listado)
 
 # Ejercicio 4: Ordenar y contar
 # Crea una lista con los siguientes números: [5, 2, 8, 1, 9, 4, 2].
 # Ordena la lista de forma ascendente usando sort().
 # Cuenta cuántas veces aparece el número 2 en la lista usando count().
 # Comprueba si el número 7 está en la lista usando in.
+
+print("---------------", "\n")
+print("Ejercicio 4", "\n")
+
+listado = [5, 2, 8, 1, 9, 4, 2]
+print("Listado sin ordenar: ", listado)
+listado.sort()
+
+
+print("lista ordenada ascendente: ", listado)
+print("Cuenta del numero 2: ", listado.count(2))
+print("¿Existe el 7 en el listado? ", 7 in listado)
 
 # Ejercicio 5: Copia vs. Referencia
 # Crea una lista llamada original con los números [1, 2, 3].
@@ -109,6 +152,26 @@ print('🐹' in animals) # -> False
 # Modifica el primer elemento de la lista referencia a 10.
 # Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
 
+print("---------------", "\n")
+print("Ejercicio 5", "\n")
+original = [1, 2, 3]
+copia_1 = original[:]
+copia_2 = copia_1.copy()
+referencia = original
+referencia[0] = 10
+
+print("original: ", original)
+print("copia_1: ", copia_1)
+print("copia_2: ", copia_2)
+print("referencia: ", referencia)
+
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
 # Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
 # Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
+
+print("---------------", "\n")
+print("Ejercicio 6", "\n")
+
+fruits = ["Manzana", "pera", "BANANA", "naranja"]
+fruits.sort(key = str.lower)
+print(fruits)
