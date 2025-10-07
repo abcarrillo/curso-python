@@ -203,6 +203,8 @@ else:
 # - Adolescente (13-17 años)
 # - Adulto (18-64 años)
 # - Adulto mayor (65 años o más)
+
+'''
 print("------------------------", "\n")
 print(" Ejercicio 4 ", "\n")
 
@@ -220,3 +222,4 @@ elif(age_input >= 65):
   print("Adulto mayor (65 años o más)")
 else:
   print("Edad no válida")
+'''
